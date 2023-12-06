@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{349A9ABA-CE2B-4349-894C-81963AA6CFA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gestion_Hopital.My.MyApplication</StartupObject>
+    <RootNamespace>Gestion_Hopital</RootNamespace>
+    <AssemblyName>Gestion Hopital</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gestion Hopital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gestion Hopital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_authentification.Designer.vb">
+      <DependentUpon>frm_authentification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_authentification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_afficherpatient.Designer.vb">
+      <DependentUpon>frm_afficherpatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_afficherpatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AjoutPatient.Designer.vb">
+      <DependentUpon>frm_AjoutPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AjoutPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.vb">
+      <DependentUpon>frm_main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_priseRDV.Designer.vb">
+      <DependentUpon>frm_priseRDV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_priseRDV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RDVjour.Designer.vb">
+      <DependentUpon>frm_RDVjour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RDVjour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module_Patient.vb" />
+    <Compile Include="Module_RDV.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_authentification.resx">
+      <DependentUpon>frm_authentification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_afficherpatient.resx">
+      <DependentUpon>frm_afficherpatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AjoutPatient.resx">
+      <DependentUpon>frm_AjoutPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_priseRDV.resx">
+      <DependentUpon>frm_priseRDV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RDVjour.resx">
+      <DependentUpon>frm_RDVjour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Der Patientenservice %28ärztlicher Notdienst%29 _ 116117_de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical Syringe Hd Transparent, Medical Border Blue Syringe Pills, Medical, Border, Blue PNG Image For Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Cross Circle Stethoscope Logo Stock Vector - Illustration of company, activities_ 171160300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53223bf7b3558866bf3ef9326290ea21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64720da758d7aaa748dd8da4a9b91e96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c001e6ca5a1b7c4670689c25673a83b4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4add2fcd72e98912488403311240c9d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient_forms_drib_lrg_jpg by Josh Warren %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c001e6ca5a1b7c4670689c25673a83b41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38de84798b46b16808db55498b7796c2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\安全用藥 扁平化 醫療促銷 簡約展板背景圖桌布手機桌布圖片免費下載 - Pngtree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0a468e18c5ac5538af971fc9beaf026c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\309136f35f24d55337f523041b5a976b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical Icons _ Micro-Animations.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b6a057a29ef49baa98b592b17a9edde5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52050fb74f24bb0ef61c76a6e89f4548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caab6ce7f4e69d448e2430927e494049.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prendre-rdv-creation-site-web.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
